@@ -1,9 +1,9 @@
 {
   "expo": {
-    "name": "PPP-KIDS",
-    "slug": "PPP-KIDS",
+    "name": "PPPKids",
+    "slug": "PPPKids",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "landscape",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
@@ -21,10 +21,22 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.jimuelbaraero.PPPKids"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "c2195a85-fbf8-4b64-adf8-6097c0dda87a"
+      }
     }
   }
 }

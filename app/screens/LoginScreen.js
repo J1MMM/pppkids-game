@@ -26,7 +26,7 @@ const Login = () => {
         })
 
         if (!email || !password) {
-            setErrMsg('Email and Password are required')
+            setErrMsg('Username and Password are required')
             setFormDisabled(false)
             return
         }
@@ -57,7 +57,7 @@ const Login = () => {
                             }
                             <View style={styles.inputContainer}>
                                 <View style={[styles.inputControl, { borderColor: errMsg ? '#FC0F3B' : '#3d3d59' }]}>
-                                    <TextInput style={styles.input} placeholder='Email' onChangeText={(e) => setEmail(e)} value={email} autoComplete='email' inputMode='email' editable={!formDisabled} />
+                                    <TextInput style={styles.input} placeholder='Username' onChangeText={(e) => setEmail(e)} value={email} autoComplete='email' inputMode='email' editable={!formDisabled} />
                                 </View>
                                 <View style={[styles.inputControl, { borderColor: errMsg ? '#FC0F3B' : '#3d3d59' }]}>
                                     <TextInput style={styles.input} placeholder='Password' secureTextEntry={!pwdVisible} onChangeText={(e) => setPassword(e)} value={password} editable={!formDisabled} />
